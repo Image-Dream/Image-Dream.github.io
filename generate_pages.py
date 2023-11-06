@@ -20,6 +20,9 @@ with open("prompts.yaml", "r") as f:
 
 with open("test_template.html", "r") as f:
     html_template = f.read()
+    
+for i,k in enumerate(keys):
+    print(k)
 
 content = ""
 page_idx = 0
