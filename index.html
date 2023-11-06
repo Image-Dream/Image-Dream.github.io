@@ -151,10 +151,16 @@
             <div class="col-4">
                 <img src="static/ipdiffuse-v0/bulldog_rgba.png" alt="dog" style="width: 100%">
             </div>
-            <div class="col-4">
+            <!-- <div class="col-4">
                 <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
                     <source src="static/imagedream-v0/bulldog.mp4" type="video/mp4">
                 </video>
+            </div> -->
+            <div class="video-compare-container" style="width: 30%">
+                <video class="video lazy" id="ex1" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
+                    <source data-src="static/imagedream-v0/bulldog.mp4" type="video/mp4"></source>
+                </video>
+                <canvas height="752" class="videoMerge" id="ex1Merge" width="1002"></canvas>
             </div>
             <!-- ----- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --- -->
             <div class="col-4">
@@ -164,10 +170,16 @@
             <div class="col-4">
                 <img src="static/ipdiffuse-v0/ghost_rgba.png" alt="dog" style="width: 100%">
             </div>
-            <div class="col-4">
+            <!-- <div class="col-4">
                 <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
                     <source src="static/imagedream-v0/ghost.mp4" type="video/mp4">
                 </video>
+            </div> -->
+            <div class="video-compare-container" style="width: 30%">
+                <video class="video lazy" id="ex2" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
+                    <source data-src="static/imagedream-v0/ghost.mp4" type="video/mp4"></source>
+                </video>
+                <canvas height="752" class="videoMerge" id="ex2Merge" width="1002"></canvas>
             </div>
             <!-- ----- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --- -->
             <div class="col-4">
@@ -177,10 +189,16 @@
             <div class="col-4">
                 <img src="static/ipdiffuse-v0/astronaut_rgba.png" alt="dog" style="width: 100%">
             </div>
-            <div class="col-4">
+            <!-- <div class="col-4">
                 <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
                     <source src="static/imagedream-v0/astronaut.mp4" type="video/mp4">
                 </video>
+            </div> -->
+            <div class="video-compare-container" style="width: 30%">
+                <video class="video lazy" id="ex3" loop playsinline autoplay muted onplay="resizeAndPlay(this)" style="height: 0px;">
+                    <source data-src="static/imagedream-v0/astronaut.mp4" type="video/mp4"></source>
+                </video>
+                <canvas height="752" class="videoMerge" id="ex3Merge" width="1002"></canvas>
             </div>
             <!-- ----- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- --- -->
         <div class="col-sm-4 my-auto center" style="margin-left:auto; margin-right: auto;">
@@ -195,8 +213,9 @@
         <div class="row">
             <div class="col-sm-12">
                 <h2>Comparison Results</h2>
-                <p>We adopt 39 prompts from MVDream and generated images using SDXL to compare with other image-to-3D methods. A fixed default configuration is used for all prompts without hyper-paramter tuning with <a href="https://github.com/threestudio-project/threestudio">threestudio</a>. 
-                ImageDream-G means the results only using CLIP features. ImageDream-G means results with both features.</p>
+                <p>We adopt 39 prompts from MVDream and generated images using SDXL to compare with other image-to-3D methods. 
+                    A fixed default configuration is used for all prompts without hyper-paramter tuning with <a href="https://github.com/threestudio-project/threestudio">threestudio</a>. 
+                    ImageDream-G means the results only using CLIP features. ImageDream-G means results with both features.</p>
             </div>
         </div>
         <div class="row" style="margin-bottom: 0px;">
@@ -250,13 +269,13 @@
         </div>
         <!-- ======================= -->
         <div class="col-xs-15">
-            <img src="static/sdxl_rgba/statue.png" alt="statue" style="width: 80%">
+            <img src="static/sdxl_rgba/wolfgirf.png" alt="wolfgirf" style="width: 80%">
         </div>
         <div class="row captioned_videos" style="margin-top: 0px; margin-bottom: 0px ;">
             <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/compare_results_320/statue.mp4" type="video/mp4"></source>
+                <source data-src="static/compare_results_320/wolfgirf.mp4" type="video/mp4"></source>
             </video>
-            <p class="compare-caption">A statue of angel, blender</p>
+            <p class="compare-caption">girl riding wolf, cute, cartoon, blender</p>
         </div>
         <!-- ======================= -->
         <div class="col-xs-15">
