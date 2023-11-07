@@ -29,8 +29,8 @@
 
     <meta property="og:site_name" content="ImageDream" />
     <meta property="og:type" content="video.other" />
-    <meta property="og:title" content="ImageDream: Multi-view Diffusion for 3D Object Generation" />
-    <meta property="og:description" content="ImageDream: Multi-view Diffusion for 3D Generation, 2023." />
+    <meta property="og:title" content="ImageDream: Image-Prompt Multi-view Diffusion for 3D Object Generation" />
+    <meta property="og:description" content="ImageDream: Image-Prompt Multi-view Diffusion for 3D Generation, 2023." />
     <meta property="og:url" content="" />
 
     <script src="assets/js/video_comparison.js"></script>
@@ -99,7 +99,18 @@
             <div class="col-md-12">
                 <h2>Abstract</h2>
                 <p>
-                    We introduce <em>ImageDream</em>, a novel suite of Image-Prompt Multi-view diffusion models devised for the nuanced task of 3D object generation. Distinct from text-only conditioned frameworks, <em>ImageDream</em> harnesses the potent capabilities of image feature inputs, thereby facilitating an additional layer of image prompt/guidance to adeptly steer the 3D object generation process. This enhancement significantly augments the visual discernibility of the generated 3D models prior to their full generation. In a departure from other State-of-the-Art (SoTA) image-conditioned endeavors, <em>ImageDream</em> excels in delivering 3D models of superior quality, nearing the finesse observed in text-conditioned exemplars like <a href="https://mv-dream.github.io/">MVDream</a>. Our models are meticulously crafted, taking into account varying degrees of control granularity derived from the provided image: wherein, the global control predominantly influences the object layout, whereas the local control adeptly refines the image appearance. The prowess of <em>ImageDream</em> is empirically showcased through a comprehensive evaluation predicated on a common prompt list as delineated in MVDream.
+                    We introduce <em>ImageDream</em>, a novel suite of Image-Prompt Multi-view diffusion models devised for the nuanced task of 3D object generation. 
+                    Distinct from text-only conditioned frameworks, <em>ImageDream</em> harnesses the potent capabilities of 
+                    image feature inputs, thereby facilitating an additional layer of image prompt/guidance to adeptly steer 
+                    the 3D object generation process and consider an absolute cononical coordination system rather than relative. 
+                    This enhancement significantly augments the visual discernibility of the 
+                    generated 3D models prior to their full generation. In a departure from other State-of-the-Art (SoTA) 
+                    image-conditioned endeavors, <em>ImageDream</em> excels in delivering 3D models of superior quality, 
+                    nearing the finesse observed in text-conditioned exemplars like <a href="https://mv-dream.github.io/">MVDream</a>. 
+                    Our models are meticulously crafted, taking into account varying degrees of control granularity derived 
+                    from the provided image: wherein, the global control predominantly influences the object layout, whereas the 
+                    local control adeptly refines the image appearance. The prowess of <em>ImageDream</em> is empirically showcased 
+                    through a comprehensive evaluation predicated on a common prompt list as delineated in MVDream.
                 </p>
                 <p>
                     Below, we elucidate the integration of the Multi-Level Image-Prompt Controller from ImageDream within the diffusion model architecture of UNet, supplementing the original text embedding and four-view camera embedding as deployed in MVDream.
